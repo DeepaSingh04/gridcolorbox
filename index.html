@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.box {
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.square {
+  width: 400px;
+  height: 400px;
+}
+
+.horizontal {
+  width: 700px;
+  height: 250px;
+}
+
+.vertical {
+  width: 400px;
+  height: 700px;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="box square" style="background-color: #ff69b4; color: #fff;">1</div>
+        <div class="box square" style="background-color: #33cc33; color: #fff;">2</div>
+        <div class="box horizontal" style="background-color: #6666ff; color: #fff;">3</div>
+        <div class="box vertical" style="background-color: #ffff66; color: #fff;">4</div>
+      </div>
+</body>
+</html>
